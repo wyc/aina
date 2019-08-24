@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  className="Layout"
+>
+  <header
+    className="Header"
+  >
+    <a
+      aria-current="page"
+      className=""
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
+    >
+      Home
+    </a>
+  </header>
+  <main
+    className="Main"
+  />
+  <footer
+    className="Footer"
+  >
+    <a
+      aria-current="page"
+      className=""
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      style={Object {}}
+    >
+      Home
+    </a>
+    <div
+      className="Footer__copyright"
+    >
+      © 2019 Victoria H. Chang
+    </div>
+  </footer>
+</div>
+`;

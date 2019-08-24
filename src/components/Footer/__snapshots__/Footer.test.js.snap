@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="Footer"
+>
+  <a
+    aria-current="page"
+    className=""
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={Object {}}
+  >
+    Home
+  </a>
+  <div
+    className="Footer__copyright"
+  >
+    © 2019 Victoria H. Chang
+  </div>
+</footer>
+`;
