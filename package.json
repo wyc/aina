@@ -44,20 +44,23 @@
   "keywords": [
     "victoriahchang",
     "gatsby",
-    "react"
+    "react",
+    "graphql",
+    "webpack",
+    "prettier",
+    "eslint",
+    "sass"
   ],
   "license": "MIT",
   "scripts": {
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "sass": "sass --watch src/styles:src/styles",
     "test": "jest",
-    "clean": "rm -rf .cache",
     "lint": "eslint src",
-    "lint-check": "eslint --print-config . | eslint-config-prettier-check",
-    "sass": "sass --watch src/styles:src/styles"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
