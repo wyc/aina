@@ -1,0 +1,68 @@
+$font-family-head: serif;
+$font-family-body: sans-serif;
+
+$font-size-base: 100%;
+$font-size-h1: 5rem;
+$font-size-h2: 4rem;
+$font-size-h3: 3rem;
+$font-size-h4: 2rem;
+$font-size-body: 1rem;
+
+$font-weight-bold: 700;
+$font-weight-lite: 300;
+$font-color-body: #ffffff;
+
+html,
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-base;
+  font-weight: $font-weight-lite;
+  color: $font-color-body;
+  -ms-text-size-adjust: $font-size-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-head;
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+p {
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+  font-weight: $font-weight-lite;
+}
+
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+  color: $font-color-body;
+  text-decoration: none;
+  outline: none;
+}
