@@ -42,4 +42,4 @@ The base foundation for a web application created by [Vi](https://www.github.com
 Add your site metadata and Google Analytics ID in `gatsby-config.js`.
 
 ## 💌 Contact
-If you have feedback or questions, please contact Vi: `halp [dot] me [at] victoriahchang [dot] com`.
+If you have feedback or questions, please contact Vi: `halp [at] victoriahchang [dot] com`.
