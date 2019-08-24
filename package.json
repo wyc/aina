@@ -54,6 +54,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "jest",
+    "clean": "rm -rf .cache",
     "lint": "eslint src",
     "lint-check": "eslint --print-config . | eslint-config-prettier-check",
     "sass": "sass --watch src/styles:src/styles"
