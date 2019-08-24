@@ -6,12 +6,12 @@ The base foundation for a web application created by [Vi](https://www.github.com
 
 **Base** uses `Sass` as the style sheet language, `Prettier` and `ESLint` as linters, and `Jest` for testing. `Normalize.css` renders element styles to be consistent and current with modern browser standards. `Husky` and `lint-staged` run after `git add`.
 
-- 4 new directories: `components/`, `images/`, `pages/`, and `styles/`
-- 2 starter pages: `index` and `error`
-- 4 basic components with respective tests: `Header`, `Footer`, `Layout`, and `Metadata`
+- 4 new directories: `components/`, `images/`, `pages/`, `styles/`, `templates/`, `utils/`
+- 2 starter pages: `index`, `error`
+- 4 basic components with tests: `Header`, `Footer`, `Layout`, `Metadata`
     - Use `Layout` to build pages
     - `Metadata` is a SEO component that uses `React-Helmet`
-- 2 stylesheets: `base` and `typography`
+- 2 stylesheets: `base`, `typography`
 
 ## 🤖 Instructions
 
