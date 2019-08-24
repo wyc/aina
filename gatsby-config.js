@@ -37,13 +37,13 @@ module.exports = {
         head: true,
         pageTransitionDelay: 0,
         respectDNT: true,
-        trackingId: '',
+        trackingId: 'TODO_ADD_GOOGLE_ANALYTICS_ID',
       },
     },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: '',
+        trackingIds: 'TODO_ADD_GOOGLE_ANALYTICS_ID',
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
