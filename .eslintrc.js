@@ -15,6 +15,7 @@ module.exports = {
     globals: {
         __PATH_PREFIX__: true,
     },
+    parser: 'babel-eslint',
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -34,7 +35,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
         'react-hooks/rules-of-hooks': 'error',
         'quotes': [2, 'single', { avoidEscape: true }],
-
+        'react/sort-prop-types': ['error', { 'sortShapeProp': true }]
     },
     settings: {
         react: {
