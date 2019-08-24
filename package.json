@@ -1,7 +1,7 @@
 {
-  "name": "base",
+  "name": "aina",
   "private": true,
-  "description": "The base foundation for a web application.",
+  "description": "Your land for an awesome web app.",
   "version": "0.1.0",
   "author": "Victoria H. Chang",
   "dependencies": {

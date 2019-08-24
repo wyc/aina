@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Base',
-    description: 'The base foundation for a web application.',
+    title: 'Aina',
+    description: 'Your land for an awesome web app.',
     author: '@victoriahchang',
   },
   plugins: [
@@ -23,7 +23,7 @@ module.exports = {
         background_color: '#222222',
         display: 'minimal-ui',
         icon: 'src/images/logo.png', // This path is relative to the root of the site.
-        name: 'base',
+        name: 'aina',
         short_name: 'starter',
         start_url: '/',
         theme_color: '#FFFFFF',
