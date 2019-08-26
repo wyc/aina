@@ -2,18 +2,8 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="Footer"
+  className="Nav Footer"
 >
-  <a
-    aria-current="page"
-    className=""
-    href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={Object {}}
-  >
-    Home
-  </a>
   <div
     className="Footer__copyright"
   >
