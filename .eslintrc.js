@@ -9,7 +9,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
+    'prettier/@typescript-eslint',
     'prettier/react',
   ],
   globals: {
@@ -23,15 +25,18 @@ module.exports = {
     ecmaVersion: 9,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   rules: {
     'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 1, maxEOF: 1 }],
     'prettier/prettier': ['error', { singleQuote: true }],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    quotes: [2, 'single', { avoidEscape: true }],
     'react/sort-prop-types': ['error', { sortShapeProp: true }],
+    quotes: [2, 'single', { avoidEscape: true }],
   },
   settings: {
     react: {
