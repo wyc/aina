@@ -49,8 +49,30 @@ textarea {
   font-family: sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  text-decoration: none;
-  outline: none;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  padding: 24px;
 }
 
 *,
@@ -61,8 +83,54 @@ textarea {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.Nav {
+  text-align: center;
+}
+
+.Header {
+  margin-bottom: 24px;
+}
+
+.Footer {
+  margin-top: 24px;
+}
+
+.Aina__title {
+  margin-right: 24px;
+  animation: scale 4s infinite ease-in-out;
+}
+.Aina__logo {
+  transform: rotate(-60deg);
+  animation: rotate 1s infinite ease-in-out;
+}
+.Aina__description {
+  margin: 24px 0;
+}
+.Aina__button {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(-80deg);
+  }
 }
 
 /*# sourceMappingURL=base.css.map */
