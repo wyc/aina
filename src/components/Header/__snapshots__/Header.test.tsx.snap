@@ -2,15 +2,10 @@
 
 exports[`Header renders correctly 1`] = `
 <header
-  className="Header"
+  className="Nav Header"
 >
   <a
-    aria-current="page"
-    className=""
     href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={Object {}}
   >
     Home
   </a>

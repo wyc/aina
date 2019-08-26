@@ -5,7 +5,7 @@ import Header from './Header';
 
 describe('Header', () => {
   it('renders correctly', () => {
-    const props = { className: 'Header' };
+    const props = {};
     const component = renderer.create(<Header {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
