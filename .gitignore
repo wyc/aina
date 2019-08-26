@@ -51,10 +51,10 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
+# Environment variables file
 .env
 
-# gatsby files
+# Gatsby files
 .cache/
 public
 
@@ -66,3 +66,6 @@ public
 .pnp.js
 yarn-error.log
 .yarn-integrity
+
+# Editor
+.vscode/
