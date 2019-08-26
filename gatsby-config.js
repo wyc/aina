@@ -1,14 +1,18 @@
+/* eslint-disable @typescript-eslint/camelcase */
+
 module.exports = {
   siteMetadata: {
-    title: 'Aina',
-    description: 'Your land for an awesome web app.',
+    title: 'Āina',
+    description: 'New found land for your awesome web app.',
     author: '@victoriahchang',
   },
   plugins: [
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -22,9 +26,9 @@ module.exports = {
       options: {
         background_color: '#222222',
         display: 'minimal-ui',
-        icon: 'src/images/logo.png', // This path is relative to the root of the site.
-        name: 'aina',
-        short_name: 'starter',
+        icon: 'src/images/logo.png',
+        name: 'Āina',
+        short_name: 'Āina',
         start_url: '/',
         theme_color: '#FFFFFF',
       },
