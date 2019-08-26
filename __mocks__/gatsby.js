@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 const gatsby = jest.requireActual('gatsby');
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
     React.createElement('a', {
       ...rest,
       href: to,
-    })
+    }),
   ),
   StaticQuery: jest.fn(),
   useStaticQuery: jest.fn(),
