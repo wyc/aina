@@ -5,15 +5,10 @@ exports[`Layout renders correctly 1`] = `
   className="Layout"
 >
   <header
-    className="Header"
+    className="Nav Header"
   >
     <a
-      aria-current="page"
-      className=""
       href="/"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      style={Object {}}
     >
       Home
     </a>
@@ -22,18 +17,8 @@ exports[`Layout renders correctly 1`] = `
     className="Main"
   />
   <footer
-    className="Footer"
+    className="Nav Footer"
   >
-    <a
-      aria-current="page"
-      className=""
-      href="/"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      style={Object {}}
-    >
-      Home
-    </a>
     <div
       className="Footer__copyright"
     >

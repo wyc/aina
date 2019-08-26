@@ -5,7 +5,7 @@ import Layout from './Layout';
 
 describe('Layout', () => {
   it('renders correctly', () => {
-    const props = { className: 'Layout', children: [] };
+    const props = { children: [] };
     const component = renderer.create(<Layout {...props} />);
 
     expect(component.toJSON()).toMatchSnapshot();
