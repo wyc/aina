@@ -1,29 +1,50 @@
 {
   "name": "aina",
   "private": true,
-  "description": "Your land for an awesome web app.",
+  "description": "New found land for your awesome web app.",
   "version": "0.1.0",
   "author": "Victoria H. Chang",
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/parser": "^7.5.5",
+    "@babel/plugin-transform-typescript": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/types": "^7.5.5",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^5.0.9",
+    "@types/react-test-renderer": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "babel": "^6.23.0",
+    "core-js": "3",
     "eslint-plugin-flowtype": "^4.2.0",
-    "gatsby": "^2.13.82",
+    "gatsby": "^2.13.83",
+    "gatsby-cli": "^2.7.40",
     "gatsby-image": "^2.2.14",
+    "gatsby-plugin-google-analytics": "^2.1.11",
+    "gatsby-plugin-google-gtag": "^1.1.6",
     "gatsby-plugin-manifest": "^2.2.9",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-sass": "^2.1.12",
     "gatsby-plugin-sharp": "^2.2.17",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-plugin-typescript": "^2.1.5",
     "gatsby-source-filesystem": "^2.1.17",
     "gatsby-transformer-sharp": "^2.2.11",
+    "global": "^4.4.0",
     "graphql": "^14.5.3",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "sass": "^1.22.10"
+    "sass": "^1.22.10",
+    "webpack": "^4.39.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.9.0",
     "babel-plugin-remove-graphql-queries": "^2.7.5",
@@ -33,39 +54,70 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
-    "gatsby-plugin-google-analytics": "^2.1.11",
-    "gatsby-plugin-google-gtag": "^1.1.6",
-    "gatsby-plugin-sass": "^2.1.12",
-    "gatsby-plugin-sitemap": "^2.2.9",
     "husky": "^3.0.4",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "lint-staged": "^9.2.3",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.9.0"
+    "react-test-renderer": "^16.9.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/*.spec.(ts|tsx|js)$"
   },
   "keywords": [
-    "victoriahchang",
-    "starter",
-    "gatsby",
-    "react",
-    "graphql",
-    "webpack",
-    "prettier",
     "eslint",
-    "sass"
+    "gatsby",
+    "graphql",
+    "husky",
+    "jamstack",
+    "javascript",
+    "jest",
+    "lint-staged",
+    "prettier",
+    "pwa",
+    "react",
+    "sass",
+    "starter",
+    "static",
+    "tslint",
+    "typescript",
+    "victoriahchang",
+    "webpack",
+    "yarn"
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "build": "gatsby build && npm run build-ts",
+    "build-ts": "tsc --noEmit --outDir public",
+    "build-ts-watch": "npm run build-ts --watch",
+    "clean-cache": "gatsby clean",
+    "clean-yarn": "yarn autoclean --force",
+    "lint": "npm run lint-eslint && npm run lint-prettier && npm run lint-ts",
+    "lint-eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint-prettier": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "lint-ts": "tslint --project tsconfig.json --fix",
     "sass": "sass --watch src/styles:src/styles",
-    "test": "jest",
-    "lint": "eslint src",
-    "clean cache": "gatsby clean",
-    "clean yarn": "yarn autoclean --force"
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "test": "jest --passWithNoTests",
+    "test-update": "jest -u --passWithNoTests",
+    "test-watch": "jest --watchAll --passWithNoTests"
   },
   "repository": {
     "type": "git",
@@ -76,12 +128,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm run build-ts"
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
+    "src/**/*.{ts,tsx}": [
+      "npm run lint",
       "git add"
     ]
   }
