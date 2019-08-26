@@ -1,7 +1,7 @@
 module.exports = {
-  'endOfLine': 'lf',
-  'jsxSingleQuote': true,
-  'singleQuote': true,
-  'tabWidth': 2,
-  'trailingComma': 'es5',
-}
+  endOfLine: 'lf',
+  jsxSingleQuote: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+};
