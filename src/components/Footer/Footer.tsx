@@ -5,17 +5,22 @@ export interface IFooterProps {
 }
 
 const Footer = ({ children }: IFooterProps): ReactElement => {
-  const github = 'https://www.github.com/victoriahchang';
-
   return (
-    <footer className='Nav Footer'>
+    <footer className='Nav Row Footer'>
       {children}
-      <div className='Footer__copy'>
-        Founded on 💖 by{' '}
-        <a href={github} rel='noopener noreferrer' target='_blank'>
+
+      <div className='Row Footer__copy'>
+        Made by{' '}
+        <a
+          className='Nav__link'
+          href={'https://www.github.com/victoriahchang'}
+          rel='noopener noreferrer'
+          target='_blank'
+        >
           Vi
         </a>
-        .
+        with
+        <div className='Emoji__heart'>💖</div>
       </div>
     </footer>
   );

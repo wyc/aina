@@ -2,12 +2,27 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="Nav Footer"
+  className="Nav Row Footer"
 >
   <div
-    className="Footer__copyright"
+    className="Row Footer__copy"
   >
-    © 2019 Victoria H. Chang
+    Made by
+     
+    <a
+      className="Nav__link"
+      href="https://www.github.com/victoriahchang"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Vi
+    </a>
+    with
+    <div
+      className="Emoji__heart"
+    >
+      💖
+    </div>
   </div>
 </footer>
 `;

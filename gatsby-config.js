@@ -2,9 +2,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Āina',
-    description: 'New found land for your awesome web app.',
     author: '@victoriahchang',
+    description: 'New found land for your awesome web app.',
+    title: 'Āina',
   },
   plugins: [
     'gatsby-plugin-offline',

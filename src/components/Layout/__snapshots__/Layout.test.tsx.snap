@@ -5,7 +5,7 @@ exports[`Layout renders correctly 1`] = `
   className="Layout"
 >
   <header
-    className="Nav Header"
+    className="Nav Row Header"
   >
     <a
       href="/"
@@ -17,12 +17,27 @@ exports[`Layout renders correctly 1`] = `
     className="Main"
   />
   <footer
-    className="Nav Footer"
+    className="Nav Row Footer"
   >
     <div
-      className="Footer__copyright"
+      className="Row Footer__copy"
     >
-      © 2019 Victoria H. Chang
+      Made by
+       
+      <a
+        className="Nav__link"
+        href="https://www.github.com/victoriahchang"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Vi
+      </a>
+      with
+      <div
+        className="Emoji__heart"
+      >
+        💖
+      </div>
     </div>
   </footer>
 </div>

@@ -8,7 +8,7 @@ export interface IHeaderProps {
 
 const Header = ({ children }: IHeaderProps): ReactElement => {
   return (
-    <header className='Nav Header'>
+    <header className='Nav Row Header'>
       <Link to='/'>Home</Link>
       {children}
     </header>
