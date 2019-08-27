@@ -34,7 +34,7 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
     npm run start
   ```
 3. In the __editor__, open the source code to start developing.
-4. In the __browser__, view live changes: [`http://localhost:8000`](http://localhost:8000).
+4. In the __browser__, view live changes: [`http://localhost:8000`](http://localhost:8000)
 
 ## 🚀 Scripts
 
@@ -48,7 +48,7 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
     npm run build
   ```
 
-- `Gatsby` starts the production server: `http://localhost:9000`](http://localhost:9000)
+- `Gatsby` starts the production server: [`http://localhost:9000`](http://localhost:9000)
   ```sh
     npm run serve
   ```
