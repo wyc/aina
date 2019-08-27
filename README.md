@@ -113,10 +113,16 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
     npm run clean-yarn
     ```
 
-## 🗒 Notes
+## 📝 Notes
 
 - `Normalize.css` renders element styles to be consistent and current with modern browser standards.
 - In `gatsby-config.js`, add your site metadata and Google Analytics ID.
+
+## ✏️ Todos
+
+- Replace `Sass` with `styled-components`.
+- Update logo in repo.
+- Add logo to README.
 
 ## 🌟 Credit
 
