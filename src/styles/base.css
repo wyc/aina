@@ -95,6 +95,9 @@ button:hover {
 .Nav {
   text-align: center;
 }
+.Nav__link {
+  margin: 0 4px;
+}
 
 .Header {
   margin-bottom: 24px;
@@ -106,11 +109,6 @@ button:hover {
 
 .Aina__title {
   margin-right: 24px;
-  animation: scale 4s infinite ease-in-out;
-}
-.Aina__logo {
-  transform: rotate(-60deg);
-  animation: rotate 1s infinite ease-in-out;
 }
 .Aina__description {
   margin: 24px 0;
@@ -120,17 +118,29 @@ button:hover {
   border: 1px solid #ffffff;
   border-radius: 4px;
   padding: 8px 16px;
+  margin-top: 16px;
 }
 
-@keyframes scale {
-  50% {
-    transform: scale(0.9);
-  }
-}
 @keyframes rotate {
   50% {
     transform: rotate(-80deg);
   }
+}
+@keyframes scale {
+  50% {
+    transform: scale(0.8);
+  }
+}
+.Emoji {
+  display: inline-block;
+}
+.Emoji__shaka {
+  transform: rotate(-60deg);
+  animation: rotate 1s infinite ease-in-out;
+}
+.Emoji__heart {
+  animation: scale 1s infinite ease-in-out;
+  padding: 0 8px;
 }
 
 /*# sourceMappingURL=base.css.map */

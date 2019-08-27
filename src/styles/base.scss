@@ -20,6 +20,10 @@ button:hover {
 
 .Nav {
   text-align: center;
+
+  &__link {
+    margin: 0 4px;
+  }
 }
 
 .Header {
@@ -33,12 +37,6 @@ button:hover {
 .Aina {
   &__title {
     margin-right: 24px;
-    animation: scale 4s infinite ease-in-out;
-  }
-
-  &__logo {
-    transform: rotate(-60deg);
-    animation: rotate 1s infinite ease-in-out;
   }
 
   &__description {
@@ -50,17 +48,32 @@ button:hover {
     border: 1px solid #ffffff;
     border-radius: 4px;
     padding: 8px 16px;
-  }
-}
-
-@keyframes scale {
-  50% {
-    transform: scale(0.9);
+    margin-top: 16px;
   }
 }
 
 @keyframes rotate {
   50% {
     transform: rotate(-80deg);
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+.Emoji {
+  display: inline-block;
+
+  &__shaka {
+    transform: rotate(-60deg);
+    animation: rotate 1s infinite ease-in-out;
+  }
+
+  &__heart {
+    animation: scale 1s infinite ease-in-out;
+    padding: 0 8px;
   }
 }
