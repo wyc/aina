@@ -2,7 +2,7 @@
 
 ## 🤔 About
 
-__Āina__ means *__land__* in Hawaiian. This is new found land to build your awesome static progressive web application.
+__Āina__ means *__land__* in Hawaiian. This is new found land to build your awesome static progressive web application!
 
 - UI frameworks: `React`, `Gatsby`
 - Superset language: `TypeScript`
@@ -18,8 +18,8 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
 - Directories: `components/`, `images/`, `pages/`, `styles/`, `templates/`, `utils/`, `__mocks__`
 - Pages: `index`, `error`
 - Components: `Header`, `Footer`, `Layout`, `Metadata`
-  - Use `Layout` as a base component to build pages
-  - `Metadata` is a SEO component that uses `React-Helmet`
+  - `Layout`: base component to build pages
+  - `Metadata`: SEO component that uses `React-Helmet`
 - Stylesheets: `base`, `_typography`, `_layout`
 
 ## 🤖 Instructions
@@ -53,12 +53,12 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
     npm run serve
   ```
 
-- `TypeScript` builds `**/*.{ts,tsx}` files into `/out`.
+- `TypeScript` builds `**/*.{ts,tsx}` files into `/public`.
   ```sh
     npm run build-ts
   ```
 
-- `TypeScript` watches and builds `**/*.{ts,tsx}` files into `/out`.
+- `TypeScript` watches and builds `**/*.{ts,tsx}` files into `/public`.
   ```sh
     npm run build-ts-watch
   ```
@@ -115,7 +115,7 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
 
 ## 📝 Notes
 
-- `Normalize.css` renders element styles to be consistent and current with modern browser standards.
+- `Normalize.css` module renders element styles to be consistent and current with modern browser standards.
 - In `gatsby-config.js`, add your site metadata and Google Analytics ID.
 
 ## ✏️ Todos
