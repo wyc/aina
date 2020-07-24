@@ -28,9 +28,11 @@ __Āina__ means *__land__* in Hawaiian. This is new found land to build your awe
   ```sh
     git clone git@github.com:victoriahchang/aina.git
   ```
-2. In the __terminal__, go to the repo directory and run the start script.
+2. In the __terminal__, go to the repo directory, install the npm dependencies,
+   and run the start script.
   ```sh
     cd aina/
+    npm install
     npm run start
   ```
 3. In the __editor__, open the source code to start developing.
